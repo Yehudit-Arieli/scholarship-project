@@ -45,10 +45,10 @@ server/          # Node.js backend
 
 | Feature | Screenshot |
 |---------|-----------|
-| Application Form (Multi-Step) | ![Form](./screenshots/form.png) |
-| Application Details View | ![Details](./screenshots/Details.png) |
-| Admin Dashboard | ![Requests](./screenshots/Requests.png) |
-| Application Status | ![Status](./screenshots/status.png) |
+| Application Form (Multi-Step) | <img src="./screenshots/form.png" width="150"/> |
+| Application Details View | <img src="./screenshots/Details.png" width="150"/> |
+| Admin Dashboard | <img src="./screenshots/Requests.png" width="150"/> |
+| Application Status | <img src="./screenshots/status.png" width="150"/> |
 
 ## 🌐 Live Demo
 🔗 [View Live Project](https://your-live-demo-link.com)
