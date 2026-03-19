@@ -16,7 +16,6 @@ A Full-Stack system for managing scholarship applications, built with React, Nod
 - **Applications Overview:** Central table with all submitted applications.
 - **Detailed View:** Inspect full student information and uploaded documents.
 - **Approve/Reject:** Quick one-click actions to update student status.
-- **Filtering:** Search and filter by name, ID, status, income, number of siblings, etc.
 
 ---
 
@@ -50,8 +49,6 @@ server/          # Node.js backend
 | Admin Dashboard | <img src="./screenshots/Requests.png" width="150"/> |
 | Application Status | <img src="./screenshots/status.png" width="150"/> |
 
-## 🌐 Live Demo
-🔗 [View Live Project](https://your-live-demo-link.com)
 
 ## 👩‍💻 Developer
 
