@@ -53,7 +53,7 @@ server/          # Node.js backend
 ## 👩‍💻 Developer
 
 **Yehudit Arieli** – Full-Stack MERN Developer  
-✉ [Email](mailto:your-email@example.com)
+✉ [Email](mailto:y0527187734@gmail.com)
 
 ## 🎯 Motivation
 
