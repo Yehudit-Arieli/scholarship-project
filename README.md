@@ -41,19 +41,14 @@ server/          # Node.js backend
 └── README.md
 ```
 
-## 📸 Screenshots
+## 📸 Screenshots (Compact Version)
 
-### Application Form (Multi-Step)
-![Form](./screenshots/form.png)
-
-### Application Details View
-![Details](./screenshots/Details.png)
-
-### Admin Dashboard
-![Requests](./screenshots/Requests.png)
-
-### Application Status
-![Status](./screenshots/status.png)
+| Feature | Screenshot |
+|---------|-----------|
+| Application Form (Multi-Step) | ![Form](./screenshots/form.png) |
+| Application Details View | ![Details](./screenshots/Details.png) |
+| Admin Dashboard | ![Requests](./screenshots/Requests.png) |
+| Application Status | ![Status](./screenshots/status.png) |
 
 ## 🌐 Live Demo
 🔗 [View Live Project](https://your-live-demo-link.com)
