@@ -46,11 +46,11 @@ server/          # Node.js backend
 ### Application Form (Multi-Step)
 ![Form](./screenshots/form.png)
 
-### Admin Dashboard
-![Requests](./screenshots/Requests.png)
-
 ### Application Details View
 ![Details](./screenshots/Details.png)
+
+### Admin Dashboard
+![Requests](./screenshots/Requests.png)
 
 ### Application Status
 ![Status](./screenshots/status.png)
