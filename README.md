@@ -1,27 +1,65 @@
-# Scholarship Application System 🎓
+# 🎓 Scholarship Management System | Full-Stack MERN
 
-מערכת מלאה (Full-stack) להגשת בקשות מלגה, הכוללת טופס רב-שלבי חכם, ניהול מדינה גלובלי והעלאת מסמכים.
+A professional, end-to-end scholarship application platform designed to streamline the entire lifecycle—from intuitive student submissions to centralized admin decision-making.
 
-## 🛠 טכנולוגיות
-- **Frontend:** React, Redux Toolkit, Axios, SweetAlert2.
-- **Backend:** Node.js, Express, Multer (לטיפול בקבצים).
-- **Styling:** CSS3 (עיצוב מותאם אישית).
+---
 
-## ✨ פיצ'רים מרכזיים
-- טופס רב-שלבי (Multi-step Form) עם ניווט קדימה ואחורה.
-- סינכרון נתונים בזמן אמת מול Redux.
-- העלאת קבצים (צילומי תעודות זהות ואישורים) בפורמט PDF ותמונה.
-- הצגת סיכום נתונים לפני שליחה סופית.
-- מנגנון הגנה על נתונים (Read-only) לפרטים קיימים.
+## 🚀 Overview
+This project solves the complexity of scholarship management by providing a dual-role interface. It features a secure, multi-step application process for students and a robust dashboard for administrators to review, approve, or reject applications in real-time.
 
-## 🚀 איך מריצים את הפרויקט?
+---
 
-1. **התקנת תלויות:**
-   יש להריץ `npm install` גם בתיקיית `client` וגם בתיקיית `server`.
+## ✨ Key Highlights & Technical Achievements
 
-2. **הגדרות סביבה:**
-   בתיקיית ה-server, יש ליצור קובץ `.env` על בסיס ה-`.env.example`.
+* **Role-Based Access Control (RBAC):** Distinct workflows and permissions for Students and Administrators, secured via JWT.
+* **Optimized UX/UI:** A seamless multi-step form architecture that improves completion rates for complex data entry.
+* **Real-Time Data Management:** Instant status updates (Pending/Approved/Rejected) reflected across the platform.
+* **Secure Backend:** Built with a scalable Node.js/Express architecture and a flexible MongoDB schema.
 
-3. **הרצה:**
-   - בתיקיית השרת: `npm start`
-   - בתיקיית הלקוח: `npm start`
+---
+
+## 🛠 Features
+
+### 👤 For Students (The Applicants)
+* **Secure Authentication:** Login/Register system with encrypted passwords.
+* **Intuitive Multi-Step Form:** Logical breakdown of personal info, financial status, and document uploads.
+* **Live Status Tracking:** A personal dashboard to monitor application progress.
+
+### ⚙️ For Administrators (The Decision Makers)
+* **Centralized Management Console:** View all incoming applications in one organized table.
+* **One-Click Decision Workflow:** Fast "Approve/Reject" system to handle large volumes of data efficiently.
+* **Dynamic Filtering:** Easily sort applications by status or applicant details.
+
+---
+
+## 📸 Screenshots
+*(Recommended: Add 2-3 screenshots of your app here to catch the recruiter's eye)*
+> **Tip:** You can use a tool like "Lightshot" or "Snipping Tool" and host images on GitHub or Imgur.
+
+---
+
+## 💻 Tech Stack
+* **Frontend:** React.js (Hooks, Context API/State Management), Axios.
+* **Backend:** Node.js, Express.js.
+* **Database:** MongoDB (Local/Compass for development).
+* **Security:** JSON Web Tokens (JWT), Bcrypt for password hashing.
+
+---
+
+## 📂 Architecture
+```text
+├── client/          # React Frontend (UI/UX)
+├── server/          # Node.js Backend (API & Logic)
+│   ├── models/      # MongoDB Schemas (User, ScholarshipApplication)
+│   ├── routes/      # Secure API Endpoints
+│   └── controllers/ # Business Logic (Auth, Admin Actions)
+└── README.md
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone & Install:**
+   ```bash
+   git clone https://github.com/Yehudit-Arieli/scholarship-project.git
+   cd scholarship-project
