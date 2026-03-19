@@ -43,26 +43,18 @@ server/          # Node.js backend
 
 ## 📸 Screenshots
 
-### Home Page
-![Home](./screenshots/home.png)
-
-### Login
-![Login](./screenshots/login.png)
-
-### Registration
-![Register](./screenshots/ragist.png)
-
-### Application Form
+### Application Form (Multi-Step)
 ![Form](./screenshots/form.png)
 
-### Status Page
-![Status](./screenshots/status.png)
-
-### Admin Requests
+### Admin Dashboard
 ![Requests](./screenshots/Requests.png)
 
-### Application Details
+### Application Details View
 ![Details](./screenshots/Details.png)
+
+### Application Status
+![Status](./screenshots/status.png)
+
 ## 🌐 Live Demo
 🔗 [View Live Project](https://your-live-demo-link.com)
 
