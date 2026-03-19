@@ -1,0 +1,56 @@
+/* קונטיינר כללי של הדף */
+.viewStatus-page {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* כותרת */
+.viewStatus-page h1 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 25px;
+}
+
+/* הודעת סטטוס */
+.viewStatus-page .status-box {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ממתין */
+.status-waiting {
+    background-color: #fff8e1;
+    color: #b08900;
+}
+
+/* מאושר */
+.status-allow {
+    background-color: #e6f9f0;
+    color: #0d8a4a;
+}
+
+/* נדחה */
+.status-reject {
+    background-color: #fdecea;
+    color: #c62828;
+}
+
+/* רספונסיבי */
+@media (max-width: 480px) {
+    .status-box {
+        font-size: 1.2rem;
+    }
+}

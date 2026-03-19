@@ -1,0 +1,69 @@
+/* עמוד כללי */
+.multiForm-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.multiForm-page .form {
+    background: #ffffff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* כפתורי השלבים (1,2,3...) */
+.steps {
+    background: #e6e9f0;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.steps:hover {
+    background: #2575fc;
+    color: white;
+}
+
+/* תוכן הטופס */
+.multiForm {
+    margin-top: 25px;
+}
+
+/* כפתורי Prev / Next */
+.b {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 15px 10px;
+    transition: 0.3s;
+}
+
+.b:hover {
+    background: #6a11cb;
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+}
+
+/* רספונסיבי */
+@media (max-width: 500px) {
+    .form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .steps {
+        padding: 8px 12px;
+        margin: 4px;
+    }
+}

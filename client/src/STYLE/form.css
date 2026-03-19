@@ -1,0 +1,173 @@
+/* קונטיינר דף הכניסה */
+.form-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* מרכז אופקי */
+    align-items: flex-start;
+    /* קרוב לראש */
+    padding-top: 20px;
+    /* מרווח קטן מלמעלה */
+    box-sizing: border-box;
+}
+
+/* קופסת הטופס */
+.form-page .form-container {
+    background-color: #fff;
+    /* רקע של הטופס בלבד */
+    padding: 40px 50px;
+    border-radius: 15px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
+    width: 350px;
+    text-align: center;
+}
+
+/* כותרת הטופס */
+.form-page .form-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #2575fc;
+    font-weight: bold;
+}
+
+/* תוויות השדות */
+.form-page .form-label {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+
+}
+
+/* שדות קלט */
+.form-page .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-page .form-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+    outline: none;
+}
+
+/* כפתור התחברות */
+.form-page .form-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.form-page .form-btn:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.form-page {
+    direction: rtl;
+    /* מגדיר את כל התוכן מימין לשמאל */
+}
+
+/* תוויות */
+.form-page .form-label {
+    text-align: right;
+}
+
+/* שדות הקלט */
+.form-page .form-input {
+    text-align: right;
+    /* יישור הטקסט לשמאל */
+    direction: rtl;
+    /* חשוב – גורם לטקסט להיכנס מהצד הימני */
+}
+
+/* הסתרת ה-input המקורי */
+.hidden-file-input {
+    display: none;
+}
+
+/* עיצוב התיבה החלופית */
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px dashed #d1d1d1;
+    /* מסגרת מקוקוות נותנת תחושה של "כאן מעלים" */
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 45px;
+}
+
+.custom-file-upload:hover {
+    border-color: #4a90e2;
+    background-color: #f0f7ff;
+}
+
+/* עיצוב שם הקובץ שנבחר */
+.file-name-display {
+    color: #2e7d32;
+    /* ירוק כהה מקצועי */
+    font-weight: 600;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* עיצוב הטקסט כשהתיבה ריקה */
+.file-placeholder {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.form-hr {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.file-input-group {
+    margin-bottom: 10px;
+}
+
+
+
+
+.submit-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.submit-btn.active {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+/* רספונסיבי */
+@media (max-width: 400px) {
+    .form-page .form-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

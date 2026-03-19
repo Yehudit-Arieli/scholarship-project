@@ -1,0 +1,96 @@
+/* קונטיינר הדף */
+.ditails-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* מרכז אופקי */
+  align-items: flex-start;
+  /* קרוב לראש הדף */
+  padding: 30px 20px;
+  /* background-color: #f5f5f5; */
+  box-sizing: border-box;
+  direction: rtl;
+  /* תמיכה בעברית */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* קופסת הפרטים */
+.user-details {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+/* כותרות סקשנים */
+.section-title {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #2575fc;
+  border-bottom: 2px solid #2575fc;
+  padding-bottom: 5px;
+}
+
+/* פסקאות מידע */
+.user-info,
+.family-info,
+.course-info,
+.bank-info {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* כפתורים */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.approve-btn {
+  background-color: #2575fc;
+}
+
+.approve-btn:hover {
+  background-color: #6a11cb;
+}
+
+.cancel-btn {
+  background-color: #2575fc;
+}
+
+.cancel-btn:hover {
+  background-color: #6a11cb;
+}
+
+/* רספונסיבי */
+@media (max-width: 600px) {
+  .user-details {
+    padding: 20px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

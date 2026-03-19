@@ -1,0 +1,108 @@
+קונטיינר הדף .viewRequests-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: visible;
+    /* מאפשר לכל הכפתורים להיות לחיצים */
+}
+
+/* כותרת הדף */
+.viewRequests-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2575fc;
+}
+
+/* טבלה */
+.viewRequests-page table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: visible;
+    /* הכפתורים לא ייחתכו */
+}
+
+.viewRequests-page th,
+.viewRequests-page td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.viewRequests-page th {
+    background-color: #2575fc;
+    color: white;
+    font-weight: bold;
+}
+
+/* שורות טבלה */
+.viewRequests-page tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.viewRequests-page tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* כפתורים בתוך הטבלה */
+.viewRequests-page td button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative;
+    /* מבטיח שהכפתור מעל כל שכבה */
+    z-index: 2;
+}
+
+.viewRequests-page td button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-2px);
+}
+
+/* רספונסיבי */
+@media (max-width: 768px) {
+
+    .viewRequests-page table,
+    .viewRequests-page th,
+    .viewRequests-page td {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .viewRequests-page table,
+    .viewRequests-page th,
+    .viewRequests-page td {
+        display: block;
+        width: 100%;
+    }
+
+    .viewRequests-page tr {
+        margin-bottom: 15px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .viewRequests-page td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        text-align: right;
+    }
+
+    .viewRequests-page th {
+        display: none;
+    }
+}

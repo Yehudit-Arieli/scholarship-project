@@ -1,0 +1,112 @@
+/* קונטיינר דף הכניסה */
+.login_regist-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /* ציר אנכי */
+    justify-content: flex-start;
+    /* מתחיל מלמעלה */
+    align-items: center;
+    /* מרכז אופקי */
+    padding-top: 20px;
+    /* מרווח קטן מלמעלה */
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+/* קופסת הטופס */
+.login_regist-page .login_regist-container {
+    background-color: #fff;
+    /* רקע של הטופס בלבד */
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+/* כותרת הטופס */
+.login_regist-page .form-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #2575fc;
+    font-weight: bold;
+}
+
+/* תוויות השדות */
+.login_regist-page .form-label {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* שדות קלט */
+.login_regist-page .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.login_regist-page .form-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+    outline: none;
+}
+
+/* כפתור התחברות */
+.login_regist-page .form-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.login_regist-page .form-btn:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.login_regist-page {
+    direction: rtl;
+    /* מגדיר את כל התוכן מימין לשמאל */
+}
+
+/* תוויות */
+.login_regist-page .form-label {
+    text-align: right;
+}
+
+/* שדות הקלט */
+.login_regist-page .form-input {
+    text-align: right;
+    /* יישור הטקסט לשמאל */
+    direction: rtl;
+    /* חשוב – גורם לטקסט להיכנס מהצד הימני */
+}
+
+/* רספונסיבי */
+@media (max-width: 400px) {
+    .login_regist-page .login_regist-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+.form-btn:disabled {
+    background-color: #bcbcbc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

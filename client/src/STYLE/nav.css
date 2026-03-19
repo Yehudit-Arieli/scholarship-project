@@ -1,0 +1,140 @@
+/* .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #555;
+} */
+
+
+
+/* קונטיינר הניווט */
+.nav-page {
+  width: 100%;
+  background-color: #ffffff;
+  /* רקע לבן נקי */
+  border-bottom: 2px solid #2575fc;
+  /* קו תחתון כחול */
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* תפריט הניווט */
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  /* הגדלתי את המרווח בין הקישורים */
+  padding: 10px 20px;
+  color: #333;
+}
+
+/* ברכת שלום למשתמש */
+.nav h1 {
+  font-size: 1rem;
+  color: #2575fc;
+  margin-right: auto;
+  /* שולח את הקישורים לצד שמאל */
+  font-weight: 500;
+}
+
+/* קישורים */
+
+/* קישורים */
+.nav .link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  /* הגדלתי קצת את הפדינג האנכי */
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* קו תחתון על hover או פעיל */
+.nav .link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #2575fc;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.nav .link:hover::after,
+.nav .link.active::after {
+  width: 100%;
+}
+
+/* שינוי צבע הקישור במצב פעיל */
+.nav .link.active {
+  color: #2575fc;
+}
+
+.user-info-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* רווח בין השם לאייקון */
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: #333; /* צבע האייקון */
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.logout-btn:hover {
+    color: #e74c3c; /* האייקון יהפוך לאדום במעבר עכבר */
+    transform: scale(1.1); /* יגדל מעט */
+}
+
+/* רספונסיבי */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav h1 {
+    margin-bottom: 10px;
+  }
+}
