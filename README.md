@@ -1,114 +1,72 @@
-🎓 Student Scholarship Management System (MERN Stack)
+# 🎓 Student Scholarship Management System | MERN Stack
 
-A professional Full-Stack system designed to automate and streamline the scholarship application process. This platform manages everything from multi-step student submissions to a centralized administration dashboard for processing applications.
+A professional Full-Stack application designed to **streamline the scholarship lifecycle** — from multi-step student submissions to a centralized admin dashboard for decision-making, real-time updates, and secure authentication.
 
-✨ Key Features
+---
 
-👤 Student Interface (Applicant)
+## 🌟 Key Highlights
 
-Authentication: Secure Login and Registration based on ID Number and Password.
+- **Role-Based Access Control (RBAC):** Students and Administrators have distinct workflows and permissions, secured with JWT.
+- **Intuitive Multi-Step Form:** 5-step student application form to ensure data integrity and improve completion rates.
+- **Real-Time Updates:** Application status (Pending / Approved / Rejected) reflected instantly across the platform.
+- **Secure File Handling:** Documents uploaded via Multer, validated and stored securely.
+- **Advanced Filtering & Sorting:** Admins can filter by city, ID, date ranges, annual income, number of siblings, etc.
 
-Smart Multi-Step Application: A structured 5-step form to ensure data accuracy:
+---
 
-Step 1: Personal Details – Auto-filled data from registration (Read-only) + Address and City.
+## 👤 Student Interface (Applicant)
 
-Step 2: Family Status – Detailed entry for parents and siblings (ID, Full Name, Birth Date).
+- **Secure Authentication:** Login/Register system with encrypted credentials.
+- **Personal Details:** Auto-filled from registration, editable address and city fields.
+- **Family Information:** Capture parents and siblings (ID, full name, birthdate).
+- **Academic Details:** Institution, field of study, tuition fees.
+- **Bank Account Info:** Secure entry for bank name, branch, and account number.
+- **Document Upload:** PDFs/Images for tuition receipts, ID copies, and other mandatory documents.
+- **Dashboard:** Live tracking of application status.
 
-Step 3: Academic Information – Selection of institution, field of study, and tuition fees.
+---
 
-Step 4: Bank Account – Secure entry of bank details (Bank name, Branch, Account number).
+## ⚙️ Admin Interface (Management)
 
-Step 5: Document Upload – Integration for uploading mandatory PDF/Image files (e.g., Tuition receipts, ID copies).
+- **Centralized Dashboard:** Overview of all student applications.
+- **Detailed Profiles:** Access to full applicant data and uploaded documents.
+- **Approve / Reject Workflow:** One-click decision-making with immediate status update.
+- **Filtering & Sorting:** Advanced search options by applicant details, financial criteria, and family information.
 
-Live Status Tracking: Real-time dashboard to view the status of the latest application (Pending / Approved / Rejected).
+---
 
-⚙️ Admin Interface (Management)
+## 🧠 Challenges & Solutions
 
-Applications Management Table: A centralized view of all applications that require review.
+- **Maintaining Multi-Step Form State:** Preserved user input across navigation steps using React state.
+- **Secure File Uploads:** Handled via Multer with server-side validation.
+- **Efficient Filtering:** Server-side sorting for large datasets to improve performance.
+- **Role-Based Security:** JWT authentication and protected routes for Admin/Student separation.
 
-Detailed Applicant View: Access to full student profiles and all submitted form data.
+---
 
-Document Verification: Direct links to view and verify the documents uploaded by students.
+## 📂 Project Architecture
 
-Server-Side Filtering & Sorting: Advanced capabilities to filter applicants by:
+```text
+client/src/          # React components, multi-step form logic, and UI
+server/models/       # MongoDB schemas for Users and Applications
+server/routes/       # REST API endpoints for Auth, Application, and Admin actions
+server/controllers/  # Business logic for handling requests
+server/uploads/      # Secure storage of uploaded student documents
+└── README.md         # Project documentation
 
-ID Number, City, or Specific Date Ranges.
+## 📸 Screenshots
 
-Financial criteria (Annual income).
+![Student Form](link-to-image)  
+![Admin Dashboard](link-to-image)
 
-Number of siblings (e.g., filter students with 3+ siblings under 18).
+## 🌐 Live Demo
+🔗 [View Live Project](https://your-live-demo-link.com)
 
-Decision Workflow: Instant "Approve" or "Reject" buttons that update the database and student's status immediately.
+## 👩‍💻 Developer
 
-💻 Tech Stack
+**Yehudit Arieli** – Full-Stack MERN Developer  
+✉ [Email](mailto:your-email@example.com)
 
-Frontend: React.js (Hooks, Multi-step logic, Client-side validation).
+## 🎯 Motivation
 
-Backend: Node.js + Express.js (RESTful API).
-
-Database: MongoDB + Mongoose (Structured schemas for Users and Applications).
-
-File Handling: Multer (Middleware for secure file uploads to the server).
-
-📂 Architecture
-
-client/src: React components, state management for forms, and UI layouts.
-
-server/models: MongoDB schemas for Users and Scholarship data.
-
-server/routes: API endpoints for Auth, Application Submission, and Admin actions.
-
-server/uploads: Dedicated directory for stored student documents.
-
-⚙️ Setup & Installation
-
-Clone the repository:
-
-git clone https://github.com/Yehudit-Arieli/scholarship-project.git
-cd scholarship-project
-
-
-Server Configuration:
-
-Navigate to the server folder:
-
-cd server
-
-
-Install dependencies:
-
-npm install
-
-
-Create a .env file and add your MONGO_URI:
-
-MONGO_URI=mongodb://localhost:27017/scholarship_db
-
-
-Start the server:
-
-npm start
-
-
-Client Configuration:
-
-Navigate to the client folder:
-
-cd ../client
-
-
-Install dependencies:
-
-npm install
-
-
-Start the React development server:
-
-npm start
-
-
-👤 Contact
-
-Yehudit Arieli - [Your Email Address]
-
-Developed as a Capstone Project focusing on MERN Stack development and complex form logic.
+This project simulates a real-world scholarship system with role-based workflows, multi-step forms, secure authentication, and complex admin management.
