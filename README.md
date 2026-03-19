@@ -39,6 +39,7 @@ server/          # Node.js backend
 │   ├── controllers/ # Logic for admin and student actions
 │   └── uploads/     # Uploaded documents
 └── README.md
+```
 
 ## 📸 Screenshots
 
