@@ -42,9 +42,26 @@ server/          # Node.js backend
 
 ## 📸 Screenshots
 
-![Student Form](link-to-image)  
-![Admin Dashboard](link-to-image)
+### Home Page
+![Home](./screenshots/home.png)
 
+### Login
+![Login](./screenshots/login.png)
+
+### Registration
+![Register](./screenshots/ragist.png)
+
+### Application Form
+![Form](./screenshots/form.png)
+
+### Status Page
+![Status](./screenshots/status.png)
+
+### Admin Requests
+![Requests](./screenshots/Requests.png)
+
+### Application Details
+![Details](./screenshots/Details.png)
 ## 🌐 Live Demo
 🔗 [View Live Project](https://your-live-demo-link.com)
 
